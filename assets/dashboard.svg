@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="620" viewBox="0 0 1100 620">
+<rect width="1100" height="620" fill="white"/>
+<style>text{font-family:Arial,sans-serif;fill:#1f2937}.h{font-size:30px;font-weight:700}.n{font-size:42px;font-weight:700}.k{font-size:16px}.s{font-size:18px;font-weight:700}</style>
+<text x="55" y="55" class="h">Lithology-Based Geospatial Analysis — Dataset Overview</text>
+<g transform="translate(55 95)">
+<rect width="230" height="120" rx="14" fill="#eef2ff"/><text x="25" y="55" class="n">1,207</text><text x="25" y="88" class="k">structural observations</text>
+</g>
+<g transform="translate(310 95)">
+<rect width="230" height="120" rx="14" fill="#ecfeff"/><text x="25" y="55" class="n">93</text><text x="25" y="88" class="k">outcrop localities</text>
+</g>
+<g transform="translate(565 95)">
+<rect width="230" height="120" rx="14" fill="#f0fdf4"/><text x="25" y="55" class="n">6</text><text x="25" y="88" class="k">lithology classes</text>
+</g>
+<g transform="translate(820 95)">
+<rect width="230" height="120" rx="14" fill="#fff7ed"/><text x="25" y="55" class="n">6</text><text x="25" y="88" class="k">kinematic classes</text>
+</g>
+<text x="55" y="280" class="s">Spatial extent</text>
+<rect x="55" y="305" width="470" height="240" rx="14" fill="#f8fafc" stroke="#cbd5e1"/>
+<text x="85" y="350" class="k">North: 51.4955°N</text><text x="85" y="390" class="k">South: 50.3131°N</text>
+<text x="85" y="430" class="k">West: 9.8600°E</text><text x="85" y="470" class="k">East: 12.0329°E</text>
+<text x="85" y="515" class="k">Central German platform</text>
+<text x="575" y="280" class="s">Dominant classes</text>
+<rect x="575" y="305" width="475" height="240" rx="14" fill="#f8fafc" stroke="#cbd5e1"/>
+<text x="605" y="350" class="k">Muschelkalk: 1,013 observations (83.9%)</text>
+<text x="605" y="395" class="k">Normal fault class: 376 observations (31.2%)</text>
+<text x="605" y="440" class="k">Inverted: 296 observations (24.5%)</text>
+<text x="605" y="485" class="k">Dextral: 224 observations (18.6%)</text>
+<text x="55" y="590" class="k">Interpretation note: observation density reflects sampling effort as well as geology.</text>
+</svg>
