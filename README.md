@@ -1,26 +1,66 @@
 # Lithology-Based Geospatial Analysis in Map
 
-A reproducible Python project for analysing structural-geology observations from the central German platform. The workflow validates fault-slip records, standardizes structural orientation, derives lithology-aware features, and prepares publication-quality maps and diagnostics.
+A reproducible Python research project for analysing structural-geology observations from the central German platform. The workflow validates fault-slip records, standardizes structural orientation, derives lithology-aware features, produces geospatial diagnostics, and exports GIS-ready summaries.
+
+![Dataset overview](assets/dashboard.svg)
 
 ## Dataset
-The analysis targets 1,207 structural observations collected at 93 outcrop localities. The source dataset is available from PANGAEA: **doi:10.1594/PANGAEA.893245**.
+The analysis targets **1,207 structural observations from 93 outcrop localities**. The public source is PANGAEA dataset **doi:10.1594/PANGAEA.893245**.
 
-## Core questions
-- How are lithology classes distributed spatially?
-- How do fault kinematics vary by lithology and locality?
-- What spatial patterns appear in strike, dip, rake, and fault type?
-- How robust are interpretations to class imbalance and sampling density?
+**Spatial extent:** 50.3131–51.4955°N, 9.8600–12.0329°E.
+
+## What the project includes
+- schema and numeric-range validation
+- deterministic cleaning and feature engineering
+- explicit right-hand-rule strike normalization
+- lithology and fault-kinematic maps
+- class-distribution diagnostics
+- normalized lithology × fault-type comparison
+- strike rose diagram and dip-angle distributions
+- sampling-density visualization
+- locality-level GeoJSON export
+- tests, CI, reproducibility guide, and sanitized notebook
+
+## Descriptive profile
+| Category | Count |
+|---|---:|
+| Muschelkalk | 1,013 |
+| Granite | 117 |
+| Buntsandstein | 30 |
+| Zechstein | 29 |
+| Basalt | 13 |
+| Rhyolite | 5 |
+
+Fault-slip classes: normal 376, inverted 296, dextral 224, sinistral 153, extension 91, pressure 67.
+
+![Lithology counts](assets/lithology_counts.svg)
+
+![Fault-slip counts](assets/fault_counts.svg)
+
+## Reproduce
+```bash
+python -m venv .venv
+source .venv/bin/activate
+pip install -e ".[geo,dev]"
+# place the source table at data/raw/2018_Navabpour_Fault-slip.tab
+python scripts/09_generate_all.py
+pytest -q
+```
 
 ## Repository layout
 ```text
 src/lithomap/      reusable analysis package
-scripts/           command-line analysis stages
+scripts/           executable pipeline stages
 config/            reproducible configuration
-data/              data acquisition notes
-docs/              methodology and interpretation
-notebooks/         exploratory workflow
-assets/            generated visual outputs
+data/derived/      compact aggregate summaries
+docs/              methodology, findings, limitations
+notebooks/         sanitized exploratory workflow
+assets/            GitHub-renderable visualization previews
+report/            concise analysis summary
 tests/             automated checks
 ```
 
-The project deliberately contains no student identity, student ID, course title, assessment instructions, or deadline metadata.
+## Interpretation safeguard
+Observation density is not automatically geological abundance. Lithology and locality sampling are strongly imbalanced, so the project reports sampling structure and normalized comparisons alongside raw counts.
+
+The repository intentionally excludes personal identity and assessment-specific metadata.
