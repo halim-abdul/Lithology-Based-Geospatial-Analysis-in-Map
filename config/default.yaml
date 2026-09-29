@@ -1,0 +1,26 @@
+project:
+  seed: 11711
+
+data:
+  source_doi: "10.1594/PANGAEA.893245"
+  local_path: "data/raw/2018_Navabpour_Fault-slip.tab"
+  skiprows: 119
+
+columns:
+  event: "Event"
+  latitude: "Latitude"
+  longitude: "Longitude"
+  lithology: "Rock"
+  certainty: "Description (certain / probable / supposed...)"
+  fault_type: "Description (normal / inverted / dextral /...)"
+  strike: "Azim [deg] (azimuth of strike)"
+  dip: "Angle [deg] (dip angle of plane)"
+  dip_direction: "Direction (dip direction)"
+  rake: "Angle [deg] (rake angle of striation)"
+  rake_direction: "Direction (rake direction)"
+
+analysis:
+  expected_rows: 1207
+  expected_localities: 93
+  map_crs: "EPSG:4326"
+  density_grid_size: 120
