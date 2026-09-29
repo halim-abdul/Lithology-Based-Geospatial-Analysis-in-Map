@@ -22,5 +22,3 @@ notebooks/         exploratory workflow
 assets/            generated visual outputs
 tests/             automated checks
 ```
-
-The project deliberately contains no student identity, student ID, course title, assessment instructions, or deadline metadata.
