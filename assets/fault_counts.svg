@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="520" viewBox="0 0 900 520">
+ <rect width="100%" height="100%" fill="white"/>
+ <style>text{font-family:Arial,sans-serif;fill:#222}.t{font-size:26px;font-weight:700}.l{font-size:16px}.v{font-size:14px}</style>
+ <text x="40" y="42" class="t">Fault-slip class distribution</text><text x="178" y="94" text-anchor="end" class="l">normal</text>
+   <rect x="190" y="77" width="670.0" height="28" rx="4" fill="steelblue"/>
+   <text x="868" y="97" class="v">376</text><text x="178" y="154" text-anchor="end" class="l">inverted</text>
+   <rect x="190" y="137" width="527.4" height="28" rx="4" fill="steelblue"/>
+   <text x="725.4468085106383" y="157" class="v">296</text><text x="178" y="214" text-anchor="end" class="l">dextral</text>
+   <rect x="190" y="197" width="399.1" height="28" rx="4" fill="steelblue"/>
+   <text x="597.1489361702128" y="217" class="v">224</text><text x="178" y="274" text-anchor="end" class="l">sinistral</text>
+   <rect x="190" y="257" width="272.6" height="28" rx="4" fill="steelblue"/>
+   <text x="470.6329787234043" y="277" class="v">153</text><text x="178" y="334" text-anchor="end" class="l">extension</text>
+   <rect x="190" y="317" width="162.2" height="28" rx="4" fill="steelblue"/>
+   <text x="360.15425531914894" y="337" class="v">91</text><text x="178" y="394" text-anchor="end" class="l">pressure</text>
+   <rect x="190" y="377" width="119.4" height="28" rx="4" fill="steelblue"/>
+   <text x="317.38829787234044" y="397" class="v">67</text></svg>
