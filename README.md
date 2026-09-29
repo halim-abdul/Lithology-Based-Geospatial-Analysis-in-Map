@@ -62,5 +62,3 @@ tests/             automated checks
 
 ## Interpretation safeguard
 Observation density is not automatically geological abundance. Lithology and locality sampling are strongly imbalanced, so the project reports sampling structure and normalized comparisons alongside raw counts.
-
-The repository intentionally excludes personal identity and assessment-specific metadata.
